@@ -223,11 +223,14 @@
       </p>
     </footer>
   </section>
+  <!-- /contact -->
+
   <script src="js/jquery-1.9.1.min.js"></script>
   <script src="slick/slick.min.js"></script>
   <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
   <script src="js/jquery.singlePageNav.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
   <script>
     function getOffSet() {
       var _offset = 450;
@@ -254,9 +257,7 @@
         "background-position": bg_css
       });
     }
-
-    // Parallax function
-    // Adapted based on https://codepen.io/roborich/pen/wpAsm        
+    
     var background_image_parallax = function ($object, multiplier, forceSet) {
       multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
       multiplier = 1 - multiplier;
@@ -320,7 +321,6 @@
       $('#tmNav').singlePageNav();
 
       // Add smooth scrolling to all links
-      // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
       $("a").on('click', function (event) {
         if (this.hash !== "") {
           event.preventDefault();
